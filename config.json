@@ -1,0 +1,9 @@
+{
+	"ip":"sg26.al-store.my.id",
+	"port": "25581",
+	"name": "BotRafiGanteng",
+	"auto-night-skip":"false",
+	"login-enabled":"false",
+	"register-cmd":"/register pass123 ",
+	"login-cmd":"/login pass123 "
+}
